@@ -1,6 +1,6 @@
 <template>
     <section class="projects" id="project">
-        <h2 class="projects-title"> Disa WebManager Project
+        <h2 class="projects-title"> Disa WebManager
             <span class="projects-title__bar"></span>
         </h2>
 
@@ -12,7 +12,6 @@
                 <li class="techs-item">RDBMS</li>
                 <li class="techs-item">FrontEnd</li>
                 <li class="techs-item">BackEnd</li>
-                <li class="techs-item">ERD</li>
             </ul>
         </div>
 
@@ -73,7 +72,7 @@ export default {
 .projects-basic-info .techs {
     font-weight: 700;
     margin-bottom: 1rem;
-    display: -webkit-box;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;

@@ -7,11 +7,10 @@
         <div class="projects-basic-info">
             <ul class="techs">
                 <li class="techs-item">Java</li>
-                <li class="techs-item">Middleware</li>
                 <li class="techs-item">Natural Language Processing</li>
+                <li class="techs-item">Middleware</li>
                 <li class="techs-item">Search Engine</li>
                 <li class="techs-item">Multiflexing</li>
-                <li class="techs-item">BackEnd</li>
             </ul>
         </div>
 
@@ -69,7 +68,7 @@ export default {
 .projects-basic-info .techs {
     font-weight: 700;
     margin-bottom: 1rem;
-    display: -webkit-box;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;

@@ -12,41 +12,20 @@
                 <li class="techs-item">REST-api</li>
                 <li class="techs-item">Layout</li>
                 <li class="techs-item">Component</li>
-                <li class="techs-item">FrontEnd</li>
-                <li class="techs-item">BackEnd</li>
             </ul>
         </div>
 
-        <div class="projects-image-commerce" @mouseover="showButton" @mouseleave="hideButton">
+        <div class="projects-image-commerce" @mouseup="showButton" @mouseleave="hideButton">
             <img class="projects-image" src="..\assets\samsungcard2.png" alt="">
-            <div class="image-cover-commerce" style="opacity: 0;" ref="image" @click="clickButton">
+            <div class="image-cover-commerce" style="opacity: 0;" ref="image">
                 <span class="image-cover-commerce__btn">View details</span>
             </div>
         </div>
-
-        <!-- <div class="projects-modal-commerce" v-bind:class="[isActive ? 'slide-animate' : '']" ref="modal">
-            <div class="projects-modal-content">
-                <div class="projects-modal-header">
-                    <h4> Commerce Chatbot Project </h4>
-                </div>
-                <p>프로젝트</p>
-                <div class="projects-modal-temp__wrap">
-                    <div class="projects-modal-image-mobile__wrap">
-
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </section>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            isActive: false,
-        }
-    },
     methods: {
         showButton() {
             this.$refs.image.style.opacity = 1;
@@ -54,13 +33,9 @@ export default {
         hideButton() {
             this.$refs.image.style.opacity = 0;
         },
-        clickButton() {
-            this.isActive = true;
-        }
     }
 }
 </script>
-
 
 <style scoped>
 .projects {
@@ -103,7 +78,7 @@ export default {
 .projects-basic-info .techs {
     font-weight: 700;
     margin-bottom: 1rem;
-    display: -webkit-box;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -151,41 +126,5 @@ li {
     transition: .3s;
     text-transform: uppercase;
 }
-.slide-animate {
-    animation: slide 1s ease forwards;
-}
-/* .projects-modal-content {
-    position: relative;
-    background-color: #fff;
-    padding: 4rem 5rem;
-    width: 80%;
-    height: 95%;
-    line-height: 1.9rem;
-    overflow: auto;
-    overflow-y: scroll;
-}
-.projects-modal-header {
-    margin-bottom: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.projects-modal-title {
-    font-size: 1.7rem;
-    text-transform: uppercase;
-    text-align: center;
-}
-.projects-modal-temp__wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.projects-modal-image-mobile__wrap {
-    width: 50%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    order: 1;
-} */
+
 </style>

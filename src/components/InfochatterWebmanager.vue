@@ -1,6 +1,6 @@
 <template>
     <section class="projects" id="project">
-        <h2 class="projects-title"> Infochatter WebManager Project
+        <h2 class="projects-title"> Infochatter WebManager 
             <span class="projects-title__bar"></span>
         </h2>
 
@@ -72,7 +72,7 @@ export default {
 .projects-basic-info .techs {
     font-weight: 700;
     margin-bottom: 1rem;
-    display: -webkit-box;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
