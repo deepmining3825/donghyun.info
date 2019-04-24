@@ -9,7 +9,7 @@ import NotFoundView from '../views/NotFoundView.vue';
 Vue.use(VueRouter);
 
 export default new VueRouter({
-    mode: 'history', // url에 # 가 들어가지 않게된다
+    mode: 'history',
     routes: [
         {
             path: '/',
@@ -35,6 +35,5 @@ export default new VueRouter({
             path: '*', // * 설정 = 위에 설정된 path 이외의 url 모두
             component: NotFoundView,
         },
-       
     ],
 });
