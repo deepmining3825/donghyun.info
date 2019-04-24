@@ -53,6 +53,7 @@
                 <h3 class="skills-subtitle__text">Web</h3>
             </div>
             <ul class="skills-content">
+                <li>Handling HTML5/CSS3</li>
                 <li>Understanding Cross Browsing</li>
                 <li>Understanding Browser Rendering</li>
             </ul>
