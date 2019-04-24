@@ -105,7 +105,7 @@ p#intro_content_text {
     line-height: 1.5rem;
 }
 span#contact_address {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 a:hover {
     color: #abcee2;
