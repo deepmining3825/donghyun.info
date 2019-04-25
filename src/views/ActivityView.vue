@@ -13,7 +13,7 @@
                 <div class="activity-detail">
                     <p class="activity-detail__text">Lecturing git at encore playdata academy</p>
                     <p class="activity-detail__text">In the past year, I've lectured about git at encore playdata academy.</p>
-                    <p class="activity-detail__text">It was not easy to teach someone, and was able to grow on my own in the process.</p>
+                    <p class="activity-detail__text">It was not easy to teach someone, but was able to grow on my own in the process.</p>
                     <ul class="activity-links">
                         <li>
                             <a id="activity-links-playdata" href="https://playdata.io/" target="_blank">
@@ -111,6 +111,10 @@ export default {
     padding: inherit;
     margin-top: -20px;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 a {
     color: #cb697b;
     font-weight: 700;
@@ -123,4 +127,13 @@ li {
 a:hover {
     color: #abcee2;
 }
+@media (max-width: 768px) {
+    .activity-activity {
+        flex-direction: column;
+    }
+    .activity-image {
+        width: 100%;
+    }
+}
+
 </style>
