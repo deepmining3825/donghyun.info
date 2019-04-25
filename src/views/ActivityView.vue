@@ -133,6 +133,7 @@ a:hover {
     }
     .activity-image {
         width: 100%;
+        content: url("../assets/lecturing2.jpg");
     }
 }
 
