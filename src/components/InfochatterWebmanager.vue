@@ -16,7 +16,7 @@
         </div>
 
         <div class="projects-image-infochatter">
-            <img class="projects-image" src="..\assets\samsungcard2.png" alt="">
+            <img class="projects-image" src="..\assets\infochatter.png" alt="">
             <div class="image-cover-infochatter" style="opacity: 0;">
                 <span class="image-cover-infochatter__btn">View details</span>
             </div>

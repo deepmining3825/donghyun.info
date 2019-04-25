@@ -7,12 +7,20 @@
             <img src="..\assets\lecturing.jpg" alt="lecturing" class="activity-image">
             <div class="activity-content">
                 <div class="activity-subtitle">
-                    <h3 class="activity-subtitle__text">Git Lecturing</h3>
+                    <h3 class="activity-subtitle__text">Lecturing</h3>
                     <span class="activity-date">2018.05 ~ing</span>
                 </div>
                 <div class="activity-detail">
-                    <p class="activity-detail__text">Lecturing at encoa academy</p>
-                    <p class="activity-detail__text">Lecturing at encoa academy</p>
+                    <p class="activity-detail__text">Lecturing git at encore playdata academy</p>
+                    <p class="activity-detail__text">In the past year, I've lectured about git at encore playdata academy.</p>
+                    <p class="activity-detail__text">It was not easy to teach someone, and was able to grow on my own in the process.</p>
+                    <ul class="activity-links">
+                        <li>
+                            <a id="activity-links-playdata" href="https://playdata.io/" target="_blank">
+                                <img src="..\assets\link.png" alt=""><span> Visit playdata </span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </article>
@@ -96,6 +104,23 @@ export default {
     font-weight: 700;
 }
 .activity-detail__text {
-    margin: .7rem 0;
+    margin: .8rem 0;
+}
+.activity-links {
+    line-height: normal;
+    padding: inherit;
+    margin-top: -20px;
+}
+a {
+    color: #cb697b;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s;
+}
+li {
+    list-style: none;
+}
+a:hover {
+    color: #abcee2;
 }
 </style>

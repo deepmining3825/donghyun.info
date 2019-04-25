@@ -16,7 +16,7 @@
         </div>
 
         <div class="projects-image-commerce" @mouseup="showButton" @mouseleave="hideButton">
-            <img class="projects-image" src="..\assets\samsungcard2.png" alt="">
+            <img class="projects-image" src="..\assets\commerce.png" alt="">
             <div class="image-cover-commerce" style="opacity: 0;" ref="image">
                 <span class="image-cover-commerce__btn">View details</span>
             </div>
