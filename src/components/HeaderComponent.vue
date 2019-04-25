@@ -39,7 +39,7 @@ ul#menu {
     color: #cb697b;
     display: flex;
     position: relative;
-    right: 20px;
+    right: -5px;
 }
 li {
     list-style: none;
