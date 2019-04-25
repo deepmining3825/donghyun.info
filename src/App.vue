@@ -15,6 +15,9 @@ export default {
     HeaderComponent,
     FooterComponent,
   },
+  created() {
+    console.log("I know you'll like me :D");
+  }
 }
 </script>
 
