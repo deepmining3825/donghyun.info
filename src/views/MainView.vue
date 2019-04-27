@@ -10,7 +10,8 @@
                     </h1>
                     <div id="intro_content">
                         <p id="intro_content_text">
-                            I like a development and would like to learn deeply.
+                            I like a development and would like to learn deeply. <br>
+                            Recently, I am interested in TypeScript, React, NoSQL.
                         </p>
 
                         <div id="contact_github">
