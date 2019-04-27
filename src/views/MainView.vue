@@ -86,7 +86,7 @@ export default {
     flex-direction: column;
 }
 .about {
-    padding: 60px 0;
+    padding: 0px 60px 60px 60px;
     background-color: #f8f8f8;
 }
 .about_wrap {
@@ -132,7 +132,7 @@ a {
     line-height: 1.5rem;
 }
 .contact_address {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 a:hover {
     color: #abcee2;
