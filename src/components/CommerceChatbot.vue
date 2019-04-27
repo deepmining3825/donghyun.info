@@ -15,24 +15,24 @@
             </ul>
         </div>
 
-        <!-- <div class="projects-image-commerce" @mouseup="showButton" @mouseleave="hideButton">
+        <div class="projects-image-commerce" @mouseup="showButton" @mouseleave="hideButton">
             <img class="projects-image" src="..\assets\commerce.png" alt="">
-            <div class="image-cover-commerce" style="opacity: 0;" ref="image">
+            <!-- <div class="image-cover-commerce" style="opacity: 0;" ref="image">
                 <span class="image-cover-commerce__btn">View details</span>
-            </div>
-        </div> -->
+            </div> -->
+        </div>
     </section>
 </template>
 
 <script>
 export default {
     methods: {
-        // showButton() {
-        //     this.$refs.image.style.opacity = 1;
-        // },
-        // hideButton() {
-        //     this.$refs.image.style.opacity = 0;
-        // },
+        showButton() {
+            //this.$refs.image.style.opacity = 1;
+        },
+        hideButton() {
+            //this.$refs.image.style.opacity = 0;
+        },
     }
 }
 </script>
