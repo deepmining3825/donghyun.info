@@ -32,7 +32,7 @@
             </div>
             <ul class="skills-content">
                 <li>Understanding Life Cycle</li>
-                <li>Implement EC Chatbot Client using Vue.js</li>
+                <li>Implementation EC Chatbot Client using Vue.js</li>
                 <li>Handling Vuex/Router</li>
             </ul>
         </article>

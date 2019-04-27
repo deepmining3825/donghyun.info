@@ -12,7 +12,7 @@
                 </div>
                 <div class="activity-detail">
                     <p class="activity-detail__text">Lecturing git at encore playdata academy</p>
-                    <p class="activity-detail__text">In the past year, I've lectured about git at encore playdata academy.</p>
+                    <p class="activity-detail__text">In the past year, I've been teaching about git at encore playdata academy.</p>
                     <p class="activity-detail__text">It was not easy to teach someone, but was able to grow on my own in the process.</p>
                     <ul class="activity-links">
                         <li>
