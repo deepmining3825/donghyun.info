@@ -1,140 +1,23 @@
 <template>
-    <section class="activity" id="activity">
-        <h2 class="activity-title"> Activity
-            <span class="activity-title__bar"></span>
-        </h2>
-        <article class="activity-activity first">
-            <img src="..\assets\lecturing.jpg" alt="lecturing" class="activity-image">
-            <div class="activity-content">
-                <div class="activity-subtitle">
-                    <h3 class="activity-subtitle__text">Lecturing</h3>
-                    <span class="activity-date">2018.05 ~ing</span>
-                </div>
-                <div class="activity-detail">
-                    <p class="activity-detail__text">Lecturing git at encore playdata academy</p>
-                    <p class="activity-detail__text">In the past year, I've been teaching about git at encore playdata academy.</p>
-                    <p class="activity-detail__text">It was not easy to teach someone, but was able to grow on my own in the process.</p>
-                    <ul class="activity-links">
-                        <li>
-                            <a id="activity-links-playdata" href="https://playdata.io/" target="_blank">
-                                <img src="..\assets\link.png" alt=""><span> Visit playdata </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </article>
-    </section>
+    <div>
+        <lecturing-component></lecturing-component>
+        <mining-component></mining-component>
+    </div>
 </template>
 
 <script>
-export default {
+import LecturingComponent from '../components/LecturingComponent.vue';
+import MiningComponent from '../components/MiningComponent.vue';
 
+export default {
+    components: {
+        LecturingComponent,
+        MiningComponent,
+    }
 }
+
 </script>
 
-<style scoped>
-.activity {
-    padding: 60px 0;
-    line-height: 1.8rem;
-}
-.activity-title {
-    grid-column: 1/-1;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 1.8rem;
-    text-shadow: 2px 2px 2px rgba(0,0,0,.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 0;
-}
-.activity-title__bar {
-    display: inline-block;
-    width: 45px;
-    background-color: #cb697b;
-    height: 2px;
-    margin-top: 30px;
-}
-.activity-activity {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 45px;
-    width: 100%;
-}
-.activity .first {
-    margin-top: .5rem;
-}
-.activity-image {
-    width: 35%;
-    height: 100%;
-    margin: .5rem 0;
-    box-shadow: 3px 1px 10px 0 rgba(0,0,0,.1);
-}
-.activity-content {
-    width: 65%;
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.activity-subtitle__text {
-    display: inline-block;
-    font-size: 1.4rem;
-}
-.activity-date {
-    display: inline-block;
-    background-color: #85b8d5;
-    padding: 2px 6px;
-    margin-left: 10px;
-    color: #fff;
-    font-size: .8rem;
-    font-weight: 400;
-    border-radius: 3px;
-    height: auto;
-    line-height: normal;
-    box-shadow: none;
-    border: 0;
-    cursor: auto;
-    position: relative;
-    top: -4px;
-}
-.activity-detail__text:first-child {
-    font-weight: 700;
-}
-.activity-detail__text {
-    margin: .8rem 0;
-}
-.activity-links {
-    line-height: normal;
-    padding: inherit;
-    margin-top: -20px;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-a {
-    color: #cb697b;
-    font-weight: 700;
-    text-decoration: none;
-    transition: .3s;
-}
-li {
-    list-style: none;
-}
-a:hover {
-    color: #abcee2;
-}
-@media (max-width: 768px) {
-    .activity-activity {
-        flex-direction: column;
-    }
-    .activity-image {
-        width: 100%;
-        content: url("../assets/lecturing2.jpg");
-    }
-}
+<style>
 
 </style>
