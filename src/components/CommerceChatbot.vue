@@ -15,11 +15,13 @@
             </ul>
         </div>
 
-        <div class="projects-image-commerce" @mouseup="showButton" @mouseleave="hideButton">
+        <div class="projects-image-commerce" @mouseover="showButton" @mouseleave="hideButton">
             <img class="projects-image" src="..\assets\commerce.png" alt="">
-            <!-- <div class="image-cover-commerce" style="opacity: 0;" ref="image">
-                <span class="image-cover-commerce__btn">View details</span>
-            </div> -->
+            <div class="image-cover-commerce" style="opacity: 0;" ref="image">
+                <router-link to="/project/commerce-chatbot">
+                    <span class="image-cover-commerce__btn">View details</span>
+                </router-link>
+            </div>
         </div>
     </section>
 </template>
@@ -28,10 +30,10 @@
 export default {
     methods: {
         showButton() {
-            //this.$refs.image.style.opacity = 1;
+            this.$refs.image.style.opacity = 1;
         },
         hideButton() {
-            //this.$refs.image.style.opacity = 0;
+            this.$refs.image.style.opacity = 0;
         },
     }
 }

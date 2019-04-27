@@ -15,10 +15,12 @@
             </ul>
         </div>
 
-        <div class="projects-image-infochatter">
+        <div class="projects-image-infochatter"  @mouseover="showButton" @mouseleave="hideButton">
             <img class="projects-image" src="..\assets\infochatter.png" alt="">
-            <div class="image-cover-infochatter" style="opacity: 0;">
-                <span class="image-cover-infochatter__btn">View details</span>
+            <div class="image-cover-infochatter" style="opacity: 0;" ref="image">
+                 <router-link to="/project/infochatter-webmanager">
+                    <span class="image-cover-infochatter__btn">View details</span>
+                </router-link>
             </div>
         </div> 
     </section>
@@ -26,7 +28,14 @@
 
 <script>
 export default {
-
+    methods: {
+        showButton() {
+            this.$refs.image.style.opacity = 1;
+        },
+        hideButton() {
+            this.$refs.image.style.opacity = 0;
+        },
+    },
 }
 </script>
 
